@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8001
+spring:
+  profiles: dev
+  application:
+    name : spring-cloud-config-1
+---
+server:
+  port: 9001
+spring:
+  profiles: prod
+  application:
+    name: spring-cloud-config-2
